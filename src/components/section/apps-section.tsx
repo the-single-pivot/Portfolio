@@ -48,16 +48,16 @@ export default function AppsSection() {
                       {app.description}
                     </p>
                   )}
-                  {(app.downloads != null || app.dau != null) && (
+                  {("downloads" in app && app.downloads != null) || ("dau" in app && app.dau != null) ? (
                     <div className="flex flex-wrap gap-x-3 gap-y-0 text-xs text-muted-foreground mt-0.5">
-                      {app.downloads != null && (
-                        <span className="tabular-nums">Downloads <span className="text-foreground font-medium">{app.downloads}</span></span>
+                      {"downloads" in app && app.downloads != null && (
+                        <span className="tabular-nums">Downloads <span className="text-foreground font-medium">{String(app.downloads)}</span></span>
                       )}
-                      {app.dau != null && (
-                        <span className="tabular-nums">DAU <span className="text-foreground font-medium">{app.dau}</span></span>
+                      {"dau" in app && app.dau != null && (
+                        <span className="tabular-nums">DAU <span className="text-foreground font-medium">{String(app.dau)}</span></span>
                       )}
                     </div>
-                  )}
+                  ) : null}
                 </div>
               </div>
             </Link>
