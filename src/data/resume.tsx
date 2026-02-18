@@ -72,10 +72,10 @@ export const DATA = {
   work: [
     {
       company: "Glance AI",
-      href: "https://splunk.com",
+      href: "https://glance.com/",
       badges: [],
       location: "Banglore, India",
-      title: "Software Engineer",
+      title: "SDE II (Android)",
       logoUrl: "/glance.png",
       start: "September 2025",
       end: "present",
@@ -96,10 +96,10 @@ export const DATA = {
     },
     {
       company: "Samsung",
-      href: "https://mitremedia.com/",
+      href: "https://www.samsung.com/us/apps/samsung-health/",
       badges: [],
       location: "Noida, India",
-      title: "Software Engineer",
+      title: "Research and Development Engineer",
       logoUrl: "/samsung.png",
       start: "June 2022",
       end: "September 2024",
